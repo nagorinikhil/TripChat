@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inclass.tripchat.Activity.Fragments.SignUpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/editText_FNameSignUp"
+        android:hint="First Name"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/editText_LNameSignUp"
+        android:id="@+id/editText_EmailSignUp"
+        android:hint="Email"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_LNameSignUp"
+        android:hint="Last Name"
+        android:layout_below="@+id/editText_FNameSignUp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/radioGroup_genderEditProfile"
+        android:id="@+id/editText_PwdSignUp"
+        android:hint="Password"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/editText_PwdSignUp"
+        android:id="@+id/editText_CnfPwdSignUp"
+        android:hint="Confirm Password"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+    <Button
+        android:text="Sign Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:id="@+id/button_SignUp"
+        android:layout_below="@+id/editText_CnfPwdSignUp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_attach_file_black_24dp"
+        android:layout_below="@+id/editText_CnfPwdSignUp"
+        android:layout_alignLeft="@+id/editText_CnfPwdSignUp"
+        android:layout_alignStart="@+id/editText_CnfPwdSignUp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/imageView_attachPicSignUp" />
+
+    <TextView
+        android:text="Attach Picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_attachPicSignUp"
+        android:layout_toRightOf="@+id/imageView_attachPicSignUp"
+        android:layout_toEndOf="@+id/imageView_attachPicSignUp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:id="@+id/textView"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup_genderEditProfile"
+        android:layout_below="@+id/editText_EmailSignUp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:text="Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton_maleSignUp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton_femaleSignUp"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <TextView
+        android:text=" Gender  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/editText_PwdSignUp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/editText_EmailSignUp"
+        android:textSize="20sp"
+        android:gravity="center" />
+</RelativeLayout>

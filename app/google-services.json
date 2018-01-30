@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "940738291997",
+    "firebase_url": "https://tripchat-996ec.firebaseio.com",
+    "project_id": "tripchat-996ec",
+    "storage_bucket": "tripchat-996ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940738291997:android:08df1acef6a8bcf0",
+        "android_client_info": {
+          "package_name": "com.inclass.tripchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940738291997-151n55it0kre8dvmcu38b08gjrvocv4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inclass.tripchat",
+            "certificate_hash": "80af6ad44f28ae027cec11847bba91b5c931e034"
+          }
+        },
+        {
+          "client_id": "940738291997-pf6pud8t71gv0fv7bdeah9rp1lhs5bvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnS5nFLVGPuOESJZ0jIdeHash0OG1lR7k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940738291997-pf6pud8t71gv0fv7bdeah9rp1lhs5bvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

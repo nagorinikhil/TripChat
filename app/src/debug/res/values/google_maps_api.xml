@@ -1,0 +1,21 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=80:AF:6A:D4:4F:28:AE:02:7C:EC:11:84:7B:BA:91:B5:C9:31:E0:34%3Bcom.inclass.tripchat.Activity.Activity
+
+    You can also add your credentials to an existing key, using this line:
+    80:AF:6A:D4:4F:28:AE:02:7C:EC:11:84:7B:BA:91:B5:C9:31:E0:34;com.inclass.tripchat.Activity.Activity
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyBPyfYXGB_mF4Cst7KVjyXXzi40iwJijII
+    </string>
+</resources>

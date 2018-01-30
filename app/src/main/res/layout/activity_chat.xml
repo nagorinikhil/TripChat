@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:context="com.inclass.tripchat.Activity.Activity.ChatActivity"
+    android:background="@color/common_google_signin_btn_text_light_disabled">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/ABL">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_chatActivity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_alignParentBottom="true"
+        android:ems="10"
+        android:id="@+id/editText_messageChatActivity"
+        android:hint="Message" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app2:srcCompat="@drawable/ic_send_black_24dp"
+        android:layout_below="@+id/recyclerView_ChatActivity"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageView_sendChatActivity" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ABL"
+        android:layout_above="@+id/editText_messageChatActivity"
+        android:id="@+id/recyclerView_ChatActivity"
+        android:padding="2dp"
+        android:scrollbars="vertical" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app2:srcCompat="@drawable/ic_image_black_24dp"
+        android:id="@+id/imageView_galleryChatActivity"
+        android:layout_below="@+id/recyclerView_ChatActivity"
+        android:layout_toLeftOf="@+id/imageView_sendChatActivity"
+        android:layout_toStartOf="@+id/imageView_sendChatActivity" />
+
+</RelativeLayout>

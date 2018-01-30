@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_editProfile"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Friends" />
+        <item
+            android:id="@+id/nav_trips"
+            android:icon="@drawable/ic_train_black_24dp"
+            android:title="Trips" />
+        <item
+            android:id="@+id/nav_chatRoomList"
+            android:icon="@drawable/ic_train_black_24dp"
+            android:title="ChatRooms" />
+        <item
+            android:id="@+id/nav_createTrip"
+            android:icon="@drawable/ic_business_center_black_24dp"
+            android:title="Create Trip" />
+
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_aboutUs"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_input_black_24dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

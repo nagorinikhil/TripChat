@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/imageView_ChatRoomList"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:layout_width="90dp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_titleChatRoomList"
+                android:layout_toRightOf="@+id/imageView_ChatRoomList"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:text="Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_locationChatRoomList"
+                android:layout_below="@+id/textView_titleChatRoomList"
+                android:layout_toRightOf="@+id/imageView_ChatRoomList"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_locationChatRoomList"
+                android:layout_toRightOf="@+id/imageView_ChatRoomList"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView_creatorNameChatRoomList" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

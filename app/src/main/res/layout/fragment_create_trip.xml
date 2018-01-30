@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inclass.tripchat.Activity.Fragments.CreateTrip">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Enter details to create new Trip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_msgCreateTrip"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textView_msgCreateTrip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:id="@+id/editText_TitleCreateTrip"
+        android:hint="Title"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment_createTrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_TitleCreateTrip"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/editText_TitleCreateTrip"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editText_LocationCreateTrip"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:visibility="invisible"
+        android:hint="Location" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_attach_file_black_24dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="27dp"
+        android:id="@+id/imageView_PicCreateTrip"
+        android:layout_below="@+id/editText_LocationCreateTrip"
+        android:layout_alignLeft="@+id/editText_LocationCreateTrip"
+        android:layout_alignStart="@+id/editText_LocationCreateTrip" />
+
+    <TextView
+        android:text="Add Location Photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_PicCreateTrip"
+        android:layout_toRightOf="@+id/imageView_PicCreateTrip"
+        android:layout_toEndOf="@+id/imageView_PicCreateTrip"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:id="@+id/textView6"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_person_add_black_24dp"
+        android:layout_below="@+id/imageView_PicCreateTrip"
+        android:layout_alignLeft="@+id/imageView_PicCreateTrip"
+        android:layout_alignStart="@+id/imageView_PicCreateTrip"
+        android:layout_marginTop="21dp"
+        android:id="@+id/imageView_AddFriendCreateTrip" />
+
+    <TextView
+        android:text="Add Friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/imageView_AddFriendCreateTrip"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <Button
+        android:text="Create Trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:id="@+id/button_createCreateTrip" />
+
+</RelativeLayout>
